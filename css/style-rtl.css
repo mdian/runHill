@@ -1,74 +1,133 @@
-/* start global */
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap");
 
+/* start global */
+body {
+  /* i think we can also add dir attribute to html tag with value rtl */
+  font-family: "Cairo", sans-serif;
+  direction: rtl;
+  text-align: right;
+}
+/* .carousel-control-prev-icon,
+.carousel-control-next-icon {
+  padding: 10px;
+  height: 37px;
+  width: 37px;
+  display: inline-block;
+} */
+
+.icon_container {
+  background-color: rgba(43, 41, 41, 0.5);
+  height: 40px;
+  width: 40px;
+  line-height: 50px;
+}
 /* end global */
 
 /* ======================================================================== */
 
 /* start top header */
-.top_header{
-    font-size: 0.7rem
+.top_header {
+  font-size: 0.7rem;
 }
 /* end top header */
 
 /* start navbar */
-.navbar li .nav-link,.dropdown-menu a{ 
-    color: #000 !important;
-    font-weight: 700;
+.navbar li .nav-link,
+.dropdown-menu a {
+  color: #000 !important;
+  font-weight: 700;
 }
-.dropdown{
-    transition: 0.5s ease-in-out; 
+.dropdown {
+  transition: 0.5s ease-in-out;
+  overflow: visible;
 }
-.dropdown-menu{
-opacity: 0;
-visibility:hidden;
-transition: 0.5s ease-in-out;
-top: 100px;
-right: -4px;
-display: block;
-line-height: 1.9rem;
-
-
+.dropdown:hover {
+  overflow: visible;
 }
-.dropdown:hover .dropdown-menu{
-/* display: block; */
-opacity: 1;
-visibility:visible;
-top: 90px;
-right: -4px;
+.dropdown-menu {
+  transition: all 0.5s ease-in-out;
+  transform-origin: bottom;
+  top: 110px;
+  right: -4px;
+  line-height: 1.9rem;
+  display: block;
+  transform: scale(0);
 }
-
-.nav-item{
-    border-bottom: 2px solid transparent;
+.dropdown:hover .dropdown-menu {
+  top: 90px;
+  right: -4px;
+  transform: scale(1);
 }
 
-
-.navbar-brand{
-    margin-top:0;
-    padding-top: 0;
+.nav-item {
+  border-bottom: 2px solid transparent;
 }
 
-.dropdown .dropdown-item{
-    border-bottom: 2px solid transparent;
-}
-.nav-item:hover,.dropdown .dropdown-item:hover{
-    background:rgb(248, 246, 246);
-    border-bottom: 2px solid orange;
-}
-.active-link{
-    background:rgb(248, 246, 246);
-    border-bottom: 2px solid orange;
-    color:orange
-}
-.nav-item a.nav-link{
-    transition: all 0.3s;
-}
-.nav-item:hover a.nav-link{
-color:orange !important;
+.navbar-brand {
+  margin-top: 0;
+  padding-top: 0;
 }
 
+.dropdown .dropdown-item {
+  border-bottom: 2px solid transparent;
+}
+.nav-item:hover,
+.dropdown .dropdown-item:hover {
+  background: rgb(248, 246, 246);
+  border-bottom: 2px solid orange;
+}
+.active-link {
+  background: rgb(248, 246, 246);
+  border-bottom: 2px solid orange;
+  color: orange;
+}
+.nav-item a.nav-link {
+  transition: all 0.3s;
+}
+.nav-item:hover a.nav-link {
+  color: orange !important;
+}
 
 /* dropdown */
-.dropdown-toggle::after{
-    display: none !important
+.dropdown-toggle::after {
+  display: none !important;
 }
 /* end dropdown */
+
+/* carousel styles */
+.carousel-caption {
+  left: 200px;
+  bottom: 110px;
+  color: #000;
+  font-size: 2rem;
+  transition: all 0.3s;
+  animation-name: fade;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  transform: scale(0);
+  animation-fill-mode: forwards;
+}
+.carousel-caption h5 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+}
+.carousel .btn {
+  border: 1px solid #111;
+  color: #111 !important;
+}
+@keyframes fade {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* project styles */
+.titel-border {
+  height: 3px;
+  margin-top: 6px;
+}
+/* end project styles */
