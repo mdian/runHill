@@ -6,6 +6,7 @@ body {
   font-family: "Cairo", sans-serif;
   direction: rtl;
   text-align: right;
+  height: 3000px;
 }
 /* .carousel-control-prev-icon,
 .carousel-control-next-icon {
@@ -20,6 +21,12 @@ body {
   height: 40px;
   width: 40px;
   line-height: 50px;
+}
+.title_text {
+  width: fit-content;
+}
+.title_text span {
+  width: 100% !important;
 }
 /* end global */
 
@@ -130,4 +137,121 @@ body {
   height: 3px;
   margin-top: 6px;
 }
+
 /* end project styles */
+
+/* news style */
+.news .btn:hover {
+  background-color: orange !important;
+  color: #000;
+}
+/* news style */
+
+/* how we style */
+
+.howwe {
+  background: url(../images/project_images/who-we-are-bg.jpg);
+  height: 75vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.play-btn {
+  display: flex;
+  height: 100px;
+  width: 100px;
+  background: rgba(241, 245, 11, 0.842);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.play-icon {
+  margin-left: 10px;
+}
+.play-btn:hover {
+  background: rgba(241, 245, 11, 0.377);
+  cursor: pointer;
+}
+
+.video_how_we {
+  height: 500px;
+}
+
+.close_modal {
+  top: -23px;
+  right: 10px;
+}
+
+/* submit section */
+
+.submit {
+  background: url(../images/project_images/subscribe-our-newsletter-bg.jpg);
+  background-size: cover;
+  background-position: left;
+  height: 75vh;
+}
+.submit_btn {
+  height: 50px;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.icon_btn {
+  border-radius: 30px;
+  padding: 10px 30px;
+}
+
+/* footer section */
+
+footer {
+  background-color: #071c33;
+  font-size: 14px;
+}
+
+footer li a {
+  color: orange;
+}
+footer li i {
+  color: orange;
+}
+
+.box {
+  border-bottom: 1px solid gray;
+}
+
+.input_contant span {
+  position: relative;
+  left: 30px;
+  background-color: orange;
+  border-top-right-radius: 30px !important;
+  border-bottom-right-radius: 30px !important;
+  width: 90px;
+  cursor: pointer;
+  z-index: 999 !important;
+  text-align: center !important;
+  display: inline-block;
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .input_contant span {
+    width: 30px;
+    text-align: center !important;
+  }
+}
+
+.footer_bottom {
+  background-color: #03080e;
+}
+.footer_bottom p {
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 768px) {
+  .footer_bottom {
+    flex-direction: column !important;
+  }
+  .footer_bottom p {
+    margin: 10px 0;
+  }
+}
