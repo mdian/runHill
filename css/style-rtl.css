@@ -6,7 +6,7 @@ body {
   font-family: "Cairo", sans-serif;
   direction: rtl;
   text-align: right;
-  height: 3000px;
+ 
 }
 /* .carousel-control-prev-icon,
 .carousel-control-next-icon {
@@ -255,3 +255,4 @@ footer li i {
     margin: 10px 0;
   }
 }
+

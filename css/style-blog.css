@@ -1,0 +1,51 @@
+.text-blog {
+  font-size: 0.8rem;
+}
+.blog_content {
+  border-bottom: 2px solid orange;
+}
+
+.blog_content:nth-child(odd) .col-7 {
+  order: 2;
+}
+.blog_content:nth-child(odd) .col-5 {
+  order: 1;
+}
+.blog_content:nth-child(odd) button {
+  float: left;
+}
+.blog_content:nth-child(odd) {
+  overflow: hidden;
+}
+.blog_search {
+  position: absolute !important;
+  left: 2px !important;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.page-item.active .page-link {
+  background: orange !important;
+  border-color: orange !important;
+}
+.page-item .page-link {
+  color: #111;
+}
+.item p {
+  padding: 1px;
+}
+.item i {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.item a{
+  color:#666;
+  text-decoration: none;
+  letter-spacing: .07rem;
+  font-weight: normal;
+  font-size: 1rem;
+}
+.item bdo ,.item span{
+  font-size: .7rem;
+}
