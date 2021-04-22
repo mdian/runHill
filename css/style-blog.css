@@ -1,3 +1,6 @@
+body {
+  overflow-x: hidden;
+}
 .text-blog {
   font-size: 0.8rem;
 }
@@ -39,13 +42,14 @@
   margin-top: 10px;
 }
 
-.item a{
-  color:#666;
+.item a {
+  color: #666;
   text-decoration: none;
-  letter-spacing: .07rem;
+  letter-spacing: 0.07rem;
   font-weight: normal;
   font-size: 1rem;
 }
-.item bdo ,.item span{
-  font-size: .7rem;
+.item bdo,
+.item span {
+  font-size: 0.7rem;
 }
